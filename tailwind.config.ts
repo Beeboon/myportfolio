@@ -8,10 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily: {
+        mono: ['"Geist Mono"', 'monospace'],
+      }
     },
   },
   plugins: [],
