@@ -1,9 +1,22 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import FloatingNavBar from "@/components/FloatingNavBar";
+import { Passions } from "@/components/Passions";
+import WaveBg from "@/components/WaveBg";
 
-export default function Home() {
+
+
+export default function App() {
   return (
-    <div className="">
-      <h1 className="">Make internet surfable</h1>
-    </div>
+    <>
+      <FloatingNavBar />
+      <WaveBg />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="passions">
+        <Passions />
+      </div>
+      {/* <BackgroundBeams className="" /> */}
+    </>
   );
 }
