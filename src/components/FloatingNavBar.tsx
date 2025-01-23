@@ -8,18 +8,18 @@ export default function FloatingNavBar() {
         {
             name: "Home",
             link: "#hero",
-            icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+            icon: <IconHome className="h-4 w-4 text-neutral-50" />,
         },
         {
             name: "About",
             link: "#passions",
-            icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+            icon: <IconUser className="h-4 w-4 text-neutral-50" />,
         },
         {
             name: "Contact",
             link: "#contact",
             icon: (
-                <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+                <IconMessage className="h-4 w-4 text-neutral-50" />
             ),
         },
     ];

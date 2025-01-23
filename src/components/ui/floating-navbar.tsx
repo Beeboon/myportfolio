@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -23,20 +23,21 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      if (Math.abs(current - lastScrollY) > 0.05) {
+        const direction = current - lastScrollY;
 
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(true);
-      } else {
         if (direction < 0) {
-          setVisible(true);
+          setVisible(true); // Défilement vers le haut
         } else {
-          setVisible(false);
+          setVisible(false); // Défilement vers le bas
         }
+
+        // Mettre à jour la position de défilement précédente
+        setLastScrollY(current);
       }
     }
   });
@@ -44,6 +45,7 @@ export const FloatingNav = ({
   return (
     <AnimatePresence mode="wait">
       <motion.div
+        layout
         initial={{
           opacity: 1,
           y: -100,
@@ -53,7 +55,8 @@ export const FloatingNav = ({
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.3,
+          ease: "easeInOut",
         }}
         className={cn(
           "flex max-w-fit  fixed top-6 inset-x-0 mx-auto border border-slate-200 border-transparent/5 rounded-full bg-transparent/10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2 items-center justify-center space-x-4",
