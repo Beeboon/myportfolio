@@ -26,6 +26,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className="font-mono antialiased bg-teal-800"
+        style={{
+          backgroundColor: "rgb(17, 94, 89)",
+          background: "radial-gradient(circle at bottom right, rgba(150, 56, 53, 1) 10%, rgba(17, 94, 89, 1) 65%)",
+        }}
       >
         {children}
       </body>

@@ -7,19 +7,19 @@ export default function FloatingNavBar() {
     const navItems = [
         {
             name: "Home",
-            link: "#hero",
-            icon: <IconHome className="h-4 w-4 text-neutral-50" />,
+            link: "#home",
+            icon: <IconHome className="h-4 w-4 text-teal-50" />,
         },
         {
             name: "About",
             link: "#passions",
-            icon: <IconUser className="h-4 w-4 text-neutral-50" />,
+            icon: <IconUser className="h-4 w-4 text-teal-50" />,
         },
         {
             name: "Contact",
             link: "#contact",
             icon: (
-                <IconMessage className="h-4 w-4 text-neutral-50" />
+                <IconMessage className="h-4 w-4 text-teal-50" />
             ),
         },
     ];
