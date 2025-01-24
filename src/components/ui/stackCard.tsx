@@ -26,21 +26,13 @@ export const CardStack = ({
     const SCALE_FACTOR = scaleFactor || 0.06;
     const [cards, setCards] = useState<Card[]>(items);
 
-    useEffect(() => {
-        startFlipping();
-
-        return () => clearInterval(interval);
-    }, []);
-
-    const startFlipping = () => {
-        interval = setInterval(() => {
-            setCards((prevCards: Card[]) => {
-                const newArray = [...prevCards]; // create a copy of the array
-                newArray.unshift(newArray.pop()!); // move the last element to the front
-                return newArray;
-            });
-        }, 5000);
-    };
+    const handleClick = () => {
+        setCards((prevCards: Card[]) => {
+            const newArray = [...prevCards]; // create a copy of the array
+            newArray.unshift(newArray.pop()!); // move the last element to the front
+            return newArray;
+        })
+    }
 
     return (
         <div className="relative h-screen w-full flex justify-center items-center border ">
@@ -48,7 +40,8 @@ export const CardStack = ({
                 return (
                     <motion.div
                         key={card.id}
-                        className={cn(card.itemClassName, "absolute bg-teal-800 h-2/3 w-1/2 rounded-3xl p-4 shadow-xl border border-teal-200 order-white/[0.1]  shadow-black/[0.1] flex flex-col justify-between")}
+                        onClick={handleClick}
+                        className={cn(card.itemClassName, "absolute bg-teal-800 h-2/3 w-2/3 rounded-3xl p-4 shadow-xl border border-teal-200 order-white/[0.1]  shadow-black/[0.1] flex flex-col justify-between")}
                         style={{
                             transformOrigin: "top center",
                         }}
@@ -66,8 +59,8 @@ export const CardStack = ({
                             zIndex: cards.length - index, // Réglage de l'ordre des cartes
                         }}
                         transition={{
-                            duration: 0.5, // Durée de la transition
-                            ease: "easeInOut",
+                            duration: 0.2, // Durée de la transition
+                            ease: "easeOut",
                         }}
                     >
                         <div className="font-normal text-teal-700">

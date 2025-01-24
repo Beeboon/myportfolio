@@ -30,7 +30,7 @@ export const projectItems = [
         id: 0,
         title: "PolyHash",
         description: "A google 2015 HashCode solution develloped trough/with raw python with my teammate \n Deep understanding of the data structure and fondamental algorithms mainly about graph exploration",
-        techs: genTechsForProj(["Python",], ["",]),
+        techs: genTechsForProj(["Python",], ["/hashcode.jpg",]),
         itemClassName: ""
     },
 

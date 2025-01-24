@@ -4,9 +4,11 @@ import { projectItems } from '@/data';
 
 export function genTechsForProj(techNames: string[], techImages: string[]): React.ReactNode {
     return (
-        <p>
-
-        </p>
+        <div className='flex justify-center items-center'>
+            {techImages.filter(srcName => srcName).map((srcName, idx) =>
+                <img src={srcName} key={idx} alt="Project Image" className='w-1/4 h-auto ' />
+            )}
+        </div>
     );
 }
 

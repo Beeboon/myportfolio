@@ -1,8 +1,10 @@
 "use client";
+
 import React, { useEffect, useState } from 'react'
 
 const WaveAnim = ({ src, alt }: { src: string, alt: string }) => {
     const [offsetY, setOffsetY] = useState<number>(0);
+    const [needRenderAnim, setNeedRenderAnim] = useState<boolean>(true);
 
     const handleScroll = () => {
         setOffsetY(window.scrollY);
@@ -15,9 +17,16 @@ const WaveAnim = ({ src, alt }: { src: string, alt: string }) => {
         };
     }, []);
 
-    if (offsetY >= window.innerHeight) {
-        return null;
-    }
+    useEffect(() => {
+        if (offsetY >= window.innerHeight) {
+            setNeedRenderAnim(false);
+        } else if (offsetY <= window.innerHeight) {
+            setNeedRenderAnim(true);
+        }
+    }, [offsetY])
+
+    if (!needRenderAnim) return null
+
     return (
         <div className="w-full h-screen absolute">
             <img
