@@ -14,7 +14,11 @@ const tailwindConfig: Config = {
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        tiger: {
+          DEFAULT: "#963835"
+        }
+      },
     },
   },
   plugins: [

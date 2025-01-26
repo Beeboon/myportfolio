@@ -1,12 +1,17 @@
 import { genTechsForProj } from "@/components/Projects";
 
+export const selfIntroduction = `I am a third-year student at Polytech Nantes, aspiring to be an / IA ingeener/
+in 2027. Passionate about computer science, I have /self-taught skills/ in
+Python, AI, and web technologies complemented by academic knowledge in Java, C, SQL,
+and Git. My /competitive swimming background/ and experience as a lifeguard have shaped my perseverance,
+teamwork, and responsibility.`
 
 export const passionsItems = [
     {
         id: 1,
         title: "Techs",
         description: "Next.js, Python, SQL, Java",
-        image: "",
+        image: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         itemClassName: "col-span-2 row-span-1"
     },
     {
@@ -20,7 +25,7 @@ export const passionsItems = [
         id: 3,
         title: "Economie and Finance",
         description: "Understanding the mechanisms of the world's society",
-        image: "",
+        image: "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         itemClassName: "col-span-2 row-span-1"
     }
 ]

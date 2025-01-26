@@ -1,6 +1,8 @@
 import React from 'react'
 import { CardStack } from './ui/stackCard'
 import { projectItems } from '@/data';
+import { ExpandableCardDemo } from './ui/expandableCard';
+import Separator from './ui/Separator';
 
 export function genTechsForProj(techNames: string[], techImages: string[]): React.ReactNode {
     return (
@@ -21,7 +23,9 @@ function Projects() {
                     style={{ transform: "rotate(-90deg)" }}
                 >My Projects</h2>
             </span>
-            <CardStack items={projectItems} />
+            <Separator orientation='vertical' />
+            <ExpandableCardDemo className="w-2/3" />
+            {/* <CardStack items={projectItems} /> */}
         </div>
     )
 }

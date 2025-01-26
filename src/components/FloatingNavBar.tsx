@@ -11,13 +11,13 @@ export default function FloatingNavBar() {
             icon: <IconHome className="h-4 w-4 text-teal-50" />,
         },
         {
-            name: "About",
-            link: "#passions",
+            name: "Projects",
+            link: "#projects",
             icon: <IconUser className="h-4 w-4 text-teal-50" />,
         },
         {
-            name: "Contact",
-            link: "#contact",
+            name: "Works",
+            link: "#works",
             icon: (
                 <IconMessage className="h-4 w-4 text-teal-50" />
             ),

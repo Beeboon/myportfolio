@@ -3,6 +3,9 @@ import FloatingNavBar from "@/components/FloatingNavBar";
 import { Passions } from "@/components/Passions";
 import WaveAnim from "@/components/WaveAnimation";
 import Projects from "@/components/Projects";
+import WhoAmI from "@/components/WhoAmI";
+import Works from "@/components/Works";
+import Contact from "@/components/Contact";
 
 
 
@@ -10,7 +13,7 @@ export default function App() {
   return (
     <>
       <FloatingNavBar />
-      <WaveAnim src="/Wave.png" alt="beautiful vector wave" />
+      <WaveAnim src="/Wave.png" alt="Beautiful wave" />
 
       <div id="home">
         <Hero />
@@ -18,14 +21,25 @@ export default function App() {
 
       <div
         id="body"
-
       >
-        <div id="passions">
-          <Passions />
+        <div id="whoami">
+          <WhoAmI />
         </div>
 
         <div id="projects">
           <Projects />
+        </div>
+
+        <div id="works">
+          <Works />
+        </div>
+
+        <div id="passions">
+          <Passions />
+        </div>
+
+        <div id="contact">
+          <Contact />
         </div>
       </div>
     </>
