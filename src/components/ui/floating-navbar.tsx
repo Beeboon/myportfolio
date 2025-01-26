@@ -9,15 +9,17 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+type navItemProps = {
+  name: string;
+  link: string;
+  icon?: JSX.Element;
+}
+
 export const FloatingNav = ({
   navItems,
   className,
 }: {
-  navItems: {
-    name: string;
-    link: string;
-    icon?: JSX.Element;
-  }[];
+  navItems: navItemProps[];
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
@@ -63,7 +65,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem: navItemProps, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}

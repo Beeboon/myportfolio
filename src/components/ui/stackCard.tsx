@@ -1,9 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-
-let interval: any;
 
 type Card = {
     id: number;

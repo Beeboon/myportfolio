@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react'
+import Image from "next/image";
 
 const WaveAnim = ({ src, alt }: { src: string, alt: string }) => {
     const [offsetY, setOffsetY] = useState<number>(0);
@@ -29,7 +30,7 @@ const WaveAnim = ({ src, alt }: { src: string, alt: string }) => {
 
     return (
         <div className="w-full h-screen absolute">
-            <img
+            <Image
                 src={src}
                 alt={alt}
                 className="absolute top-0 left-0 w-full object-cover z-10"

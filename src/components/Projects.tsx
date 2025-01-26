@@ -1,6 +1,5 @@
 import React from 'react'
-import { CardStack } from './ui/stackCard'
-import { projectItems } from '@/data';
+import Image from "next/image";
 import { ExpandableCardDemo } from './ui/expandableCard';
 import Separator from './ui/Separator';
 
@@ -8,7 +7,7 @@ export function genTechsForProj(techNames: string[], techImages: string[]): Reac
     return (
         <div className='flex justify-center items-center'>
             {techImages.filter(srcName => srcName).map((srcName, idx) =>
-                <img src={srcName} key={idx} alt="Project Image" className='w-1/4 h-auto ' />
+                <Image src={srcName} key={idx} alt="Project Image" className='w-1/4 h-auto ' />
             )}
         </div>
     );
