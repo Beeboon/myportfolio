@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
+// output: "export",
+// typescript: {
+//   ignoreBuildErrors: true,
+// },
 
 const nextConfig: NextConfig = {
-  output: "export",
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
     domains: [
       'images.unsplash.com',
