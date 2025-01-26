@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       <FloatingNavBar />
-      <WaveAnim src="/Wave.png" alt="Beautiful wave" />
+      <WaveAnim src="/Wave.webp" alt="Beautiful wave" />
 
       <div id="home">
         <Hero />

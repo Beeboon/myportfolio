@@ -22,7 +22,7 @@ function WhoAmI() {
             <div className="bg-teal-800 rounded-lg group">
                 <div className="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-6 p-6">
                     <Image
-                        src="/me.jpg"
+                        src="/me.webp"
                         width={200}
                         height={200}
                         className="rounded-full shadow-lg"
