@@ -12,7 +12,7 @@ function Hero() {
                 words='Make Internet Surfable'
                 className='text-center text-5xl p-1  uppercase'
             />
-            <h2 className='' >Hello, I'm Tom, welcome to my portfolio and let's introduce me</h2>
+            <h2 className='' >Hello, I&apos;m Tom, welcome to my portfolio and let&apos;s introduce me</h2>
         </div >
     )
 }
