@@ -8,7 +8,7 @@ const formatText = (text: string, className: string): JSX.Element => {
     return (<p className={cn(className)}>{
         text.split(/(\/[^/]+\/)/).map((part, idx) => {
             if (part.startsWith("/") && part.endsWith("/")) {
-                return (<Highlight key={idx} className='group-hover:bg-tiger transition-all duration-300 ease-in-out'>
+                return (<Highlight key={idx}>
                     {part.slice(1, -1)}
                 </Highlight>);
             } else { return part }
@@ -32,7 +32,7 @@ function WhoAmI() {
                         <h2 className=" text-3xl text-teal-600 font-extrabold group-hover:translate-x-2 transition-all duration-300 ease-in-out">
                             Who Am I
                         </h2>
-                        {formatText(selfIntroduction, "text-center text-lg text-teal-300 md:text-left")}
+                        {formatText(selfIntroduction, "text-center text-lg text-teal-300 md:text-left ")}
                     </div>
                 </div>
             </div>

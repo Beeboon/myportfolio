@@ -70,7 +70,7 @@ export function ExpandableCard({
 
 
     return (
-        <div className={cn(className)}>
+        <div className={cn(className, "internalSc")}>
             <AnimatePresence>
                 {active && (
                     <motion.div
@@ -107,7 +107,7 @@ export function ExpandableCard({
                         <motion.div
                             layoutId={`card-${active.title}-${id}`}
                             ref={ref}
-                            className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-teal-300 sm:rounded-3xl overflow-hidden"
+                            className="scrollable w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-teal-300 sm:rounded-3xl overflow-y-scroll"
                         >
                             <motion.div layoutId={`image-${active.title}-${id}`}>
                                 <Image

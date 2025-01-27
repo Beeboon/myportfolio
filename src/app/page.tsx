@@ -21,6 +21,7 @@ export default function App() {
 
       <div
         id="body"
+        className="scrollable"
       >
         <div id="whoami">
           <WhoAmI />

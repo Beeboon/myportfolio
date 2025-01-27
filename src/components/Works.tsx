@@ -1,9 +1,15 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import { Timeline } from "@/components/ui/timeline";
+import { worksItems } from "@/data/works";
 
 function Works() {
+
     return (
-        <div>Works</div>
-    )
+        <div className="w-full mb-20">
+            <Timeline data={worksItems} />
+        </div>
+    );
 }
 
-export default Works
+export default Works;

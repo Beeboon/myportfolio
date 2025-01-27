@@ -1,4 +1,5 @@
 import React from 'react'
+import Highlight from './ui/highlight-text';
 import { TextGenerateEffect } from './ui/textGenerateEffect'
 
 function Hero() {
@@ -12,7 +13,14 @@ function Hero() {
                 words='Make Internet Surfable'
                 className='text-center text-5xl p-1  uppercase'
             />
-            <h2 className='' >Hello, I&apos;m Tom, welcome to my portfolio and let&apos;s introduce me</h2>
+            <h2 className="group text-teal-950">
+                Hello I&apos;m{" "}
+                <Highlight className="group-hover:bg-tiger/80 transition-all duration-300 ease-in-out">
+                    Tom
+                </Highlight>,
+                welcome to my portfolio and let&apos;s introduce me
+            </h2>
+
         </div >
     )
 }
