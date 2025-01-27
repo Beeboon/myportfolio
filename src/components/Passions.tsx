@@ -9,12 +9,12 @@ export function Passions() {
         <div className="h-screen mx-20">
             <h2 className="text-center text-5xl uppercase text-teal-400 p-20">- What I love -</h2>
             <BentoGrid className="mx-auto">
-                {passionsItems.map(({ id, title, description, image, itemClassName }) =>
+                {passionsItems.map(({ id, title, description, itemClassName }) =>
                     <BentoGridItem
                         key={id}
                         title={title}
                         description={description}
-                        image={image}
+                        // image={image}
                         className={cn(itemClassName)}
                     >
                     </BentoGridItem>
