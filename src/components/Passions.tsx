@@ -14,7 +14,6 @@ export function Passions() {
                         key={id}
                         title={title}
                         description={description}
-                        // image={image}
                         className={cn(itemClassName)}
                     >
                     </BentoGridItem>

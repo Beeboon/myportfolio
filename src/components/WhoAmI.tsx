@@ -20,7 +20,7 @@ function WhoAmI() {
     return (
         <div className="mt-[10vh] space-y-10 relative p-[1px] bg-gradient-to-r from-transparent via-teal-300 to-transparent">
             <div className="bg-teal-800 rounded-lg group">
-                <div className="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-6 p-6">
+                <div className="flex flex-col items-center space-y-6 gap-5 md:flex-row md:space-y-0 md:space-x-6 py-6 px-20">
                     <Image
                         src="/me.webp"
                         width={200}
@@ -28,14 +28,6 @@ function WhoAmI() {
                         className="rounded-full shadow-lg"
                         alt="Biography image"
                     />
-                    <Image
-                        src="/me.webp"
-                        width={200}
-                        height={200}
-                        className="rounded-3xl shadow-xl"
-                        alt="Biography image"
-                    />
-
                     <div>
                         <h2 className=" text-3xl text-teal-600 font-extrabold group-hover:translate-x-2 transition-all duration-300 ease-in-out">
                             Who Am I

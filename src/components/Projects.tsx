@@ -1,21 +1,11 @@
 import React from 'react'
-import Image from "next/image";
-import { ExpandableCardDemo } from './ui/expandableCard';
+import { ExpandableCard } from './ui/expandableCard';
 import Separator from './ui/Separator';
-
-export function genTechsForProj(techNames: string[], techImages: string[]): React.ReactNode {
-    return (
-        <div className='flex justify-center items-center'>
-            {techImages.filter(srcName => srcName).map((srcName, idx) =>
-                <Image src={srcName} key={idx} alt="Project Image" className='w-1/4 h-auto ' />
-            )}
-        </div>
-    );
-}
+import { cards } from '@/data/projects';
 
 function Projects() {
     return (
-        <div className='h-screen w-full flex flex-row items-center justify-center my-40 border border-red'>
+        <div className='h-screen w-full flex flex-row items-center justify-center my-40 border'>
             <span className=''>
                 <h2
                     className='text-center text-5xl font-bold text-teal-400 border'
@@ -23,8 +13,7 @@ function Projects() {
                 >My Projects</h2>
             </span>
             <Separator orientation='vertical' />
-            <ExpandableCardDemo className="w-2/3" />
-            {/* <CardStack items={projectItems} /> */}
+            <ExpandableCard cards={cards} className="w-2/3" />
         </div>
     )
 }

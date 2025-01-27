@@ -1,5 +1,3 @@
-import { genTechsForProj } from "@/components/Projects";
-
 export const selfIntroduction = `I am a third-year student at Polytech Nantes, aspiring to be an / IA ingeener/
 in 2027. Passionate about computer science, I have /self-taught skills/ in
 Python, AI, and web technologies complemented by academic knowledge in Java, C, SQL,
@@ -35,7 +33,8 @@ export const projectItems = [
         id: 0,
         title: "PolyHash",
         description: "A google 2015 HashCode solution develloped trough/with raw python with my teammate \n Deep understanding of the data structure and fondamental algorithms mainly about graph exploration",
-        techs: genTechsForProj(["Python",], ["/hashcode.jpg",]),
+        techs: ["Python",],
+        image: "/hashcode.jpg",
         itemClassName: ""
     },
 
@@ -43,7 +42,7 @@ export const projectItems = [
         id: 1,
         title: "Portfolio",
         description: "A web project to learn web developpement in optic to build web app for companies",
-        techs: genTechsForProj(["Next.js", "React", "Tailwind"], ["",]),
+        techs: ["Next.js", "React", "Tailwind"],
         itemClassName: ""
     },
 
@@ -51,7 +50,7 @@ export const projectItems = [
         id: 2,
         title: "PolyHash",
         description: "A google 2015 HashCode solution develloped trough/with raw python with my teammate \n Deep understanding of the data structure and fondamental algorithms mainly about graph exploration",
-        techs: genTechsForProj(["Python",], ["",]),
+        techs: ["Python",],
         itemClassName: ""
     },
 ]
