@@ -29,7 +29,7 @@ function WhoAmI() {
                         alt="Biography image"
                     />
                     <Image
-                        src="/me.jpg"
+                        src="/me.webp"
                         width={200}
                         height={200}
                         className="rounded-3xl shadow-xl"
