@@ -16,8 +16,17 @@ const tailwindConfig: Config = {
     extend: {
       colors: {
         tiger: {
-          DEFAULT: "#963835"
-        }
+          50: "#fbe8e8",
+          100: "#f5d1d1",
+          200: "#eaa3a3",
+          300: "#df7575",
+          400: "#d44747",
+          DEFAULT: "#963835",
+          600: "#7b2d2d",
+          700: "#602323",
+          800: "#451818",
+          900: "#2a0d0d",
+        },
       },
     },
   },

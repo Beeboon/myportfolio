@@ -5,7 +5,7 @@ import WaveAnim from "@/components/WaveAnimation";
 import Projects from "@/components/Projects";
 import WhoAmI from "@/components/WhoAmI";
 import Works from "@/components/Works";
-import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 
 
@@ -39,7 +39,7 @@ export default function App() {
         </div>
 
         <div id="contact">
-          <Contact />
+          <Footer />
         </div>
       </div>
     </>

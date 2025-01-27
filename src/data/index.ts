@@ -7,23 +7,23 @@ teamwork, and responsibility.`
 export const passionsItems = [
     {
         id: 1,
-        title: "Techs",
+        title: "Programmation",
         description: "Next.js, Python, SQL, Java",
-        image: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: "/informatique.jpg",
         itemClassName: "col-span-2 row-span-1"
     },
     {
         id: 2,
         title: "Sports & water",
         description: "Surf, Swimming, Gym, Lifeguard",
-        image: "",
+        image: "/dune.jpg",
         itemClassName: "col-span-1 row-span-2"
     },
     {
         id: 3,
         title: "Economie and Finance",
         description: "Understanding the mechanisms of the world's society",
-        image: "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        image: "/economie.jpg",
         itemClassName: "col-span-2 row-span-1"
     }
 ]
@@ -54,3 +54,21 @@ export const projectItems = [
         itemClassName: ""
     },
 ]
+
+export const socialMedia = [
+    {
+        id: 1,
+        img: "/git.svg",
+        href: "https://github.com/TomDaniaud",
+    },
+    {
+        id: 2,
+        img: "/twit.svg",
+        href: "https://www.instagram.com/tom_dnd_/",
+    },
+    {
+        id: 3,
+        img: "/link.svg",
+        href: "https://www.linkedin.com/in/daniaud-tom-b612b92a0/",
+    },
+];
