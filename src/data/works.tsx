@@ -48,7 +48,7 @@ export const worksItems = [
         content: (
             <div className="group">
                 <p className="text-neutral-400 mb-8">
-                    Admitted by competitive examination to Polytech's <Highlight>
+                    Admitted by competitive examination to Polytech&apos;s <Highlight>
                         two-year preparatory class</Highlight> for
                     engineering schools. Teaching a solid background in general science from 2022 to 2024.
                 </p>
