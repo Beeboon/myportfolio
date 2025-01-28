@@ -33,7 +33,7 @@ const WaveAnim = ({ src, alt }: { src: string, alt: string }) => {
             <Image
                 src={src}
                 alt={alt}
-                className="absolute top-0 left-0 w-full object-cover z-10"
+                className="absolute object-center object-cover z-10"
                 fill
                 style={{
                     transform: `translateY(${Math.pow(offsetY / 10, 2)}px) rotate(${-offsetY / 2.5}deg)`, // Réduire la vitesse de défilement

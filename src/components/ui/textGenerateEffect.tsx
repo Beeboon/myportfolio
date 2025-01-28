@@ -34,13 +34,13 @@ export const TextGenerateEffect = ({
         className = ""
         switch (idx) {
             case 0:
-                className = "text-left"
+                className = "text-left -ml-10"
                 break;
             case 1:
-                className = "text-teal-200 text-right -mr-40"
+                className = "text-teal-200 text-right -mr-20 md:-mr-40"
                 break;
             case 2:
-                className = "text-left -ml-20"
+                className = "text-left -ml-10 md:-ml-20"
                 break;
             default:
                 break;
@@ -50,7 +50,7 @@ export const TextGenerateEffect = ({
 
     const renderWords = () => {
         return (
-            <motion.div ref={scope} className="flex flex-col items-stretch">
+            <motion.div ref={scope} className="flex flex-col items-center ">
                 {wordsArray.map((word, idx) => {
                     return (
                         <motion.span
@@ -70,8 +70,8 @@ export const TextGenerateEffect = ({
 
     return (
         <div className={cn("font-bold", className)}>
-            <div className="mt-4">
-                <div className=" text-teal-400 text-7xl tracking-wide" style={{ textShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}>
+            <div className="">
+                <div className=" text-teal-400 text-4xl md:text-6xl ld:text-7xl tracking-wide" style={{ textShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}>
                     {renderWords()}
                 </div>
             </div>

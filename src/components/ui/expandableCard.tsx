@@ -83,7 +83,7 @@ export function ExpandableCard({
             </AnimatePresence>
             <AnimatePresence>
                 {active && (
-                    <div className="fixed inset-0  grid place-items-center z-[100]">
+                    <div className="fixed inset-0 grid place-items-center z-[100]">
                         <motion.button
                             key={`button-${active.title}-${id}`}
                             layout
@@ -163,15 +163,15 @@ export function ExpandableCard({
                     </div>
                 )}
             </AnimatePresence>
-            <ul className="max-w-2xl mx-auto w-full gap-4 max-h-[80svh] overflow-y-auto">
+            <ul className="max-w-2xl mx-auto w-full gap-4 max-h-[80svh] overflow-y-auto px-4">
                 {cards.map((card, idx) => (
                     <motion.div
                         layoutId={`card-${card.title}-${id}`}
                         key={`card-${card.title}-${id}-${idx}`}
                         onClick={() => setActive(card)}
-                        className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-400/25 rounded-xl cursor-pointer"
+                        className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-400/25 rounded-xl cursor-pointer w-full"
                     >
-                        <div className="flex gap-4 flex-col md:flex-row ">
+                        <div className="flex gap-4 flex-col md:flex-row w-full items-center">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
                                 <Image
                                     width={100}
@@ -181,7 +181,7 @@ export function ExpandableCard({
                                     className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
                                 />
                             </motion.div>
-                            <div className="">
+                            <div className="flex-1">
                                 <motion.h3
                                     layoutId={`title-${card.title}-${id}`}
                                     className="text-lg font-bold text-teal-400 text-center md:text-left"

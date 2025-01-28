@@ -10,21 +10,21 @@ export const passionsItems = [
         title: "Programmation",
         description: "Next.js, Python, SQL, Java",
         image: "/informatique.jpg",
-        itemClassName: "col-span-2 row-span-1"
+        itemClassName: "col-span-1 row-span-1 md:col-span-2  md:row-span-1 "
     },
     {
         id: 2,
         title: "Sports & water",
         description: "Surf, Swimming, Gym, Lifeguard",
         image: "/dune.jpg",
-        itemClassName: "col-span-1 row-span-2"
+        itemClassName: "col-span-1 row-span-1 md:col-span-1  md:row-span-2 "
     },
     {
         id: 3,
         title: "Economie and Finance",
         description: "Understanding the mechanisms of the world's society",
         image: "/economie.jpg",
-        itemClassName: "col-span-2 row-span-1"
+        itemClassName: "col-span-1 row-span-1 md:col-span-2  md:row-span-1 "
     }
 ]
 
@@ -63,7 +63,7 @@ export const socialMedia = [
     },
     {
         id: 2,
-        img: "/twit.svg",
+        img: "/insta.svg",
         href: "https://www.instagram.com/tom_dnd_/",
     },
     {

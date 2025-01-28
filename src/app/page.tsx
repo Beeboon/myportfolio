@@ -13,7 +13,9 @@ export default function App() {
   return (
     <>
       <FloatingNavBar />
-      <WaveAnim src="/Wave.webp" alt="Beautiful wave" />
+      <div className="max-md:hidden">
+        <WaveAnim src="/Wave.webp" alt="Beautiful wave" />
+      </div>
 
       <div id="home">
         <Hero />
@@ -21,7 +23,6 @@ export default function App() {
 
       <div
         id="body"
-        className="scrollable"
       >
         <div id="whoami">
           <WhoAmI />
