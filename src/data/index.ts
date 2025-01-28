@@ -10,14 +10,14 @@ export const passionsItems = [
         title: "Programmation",
         description: "Next.js, Python, SQL, Java",
         image: "/informatique.jpg",
-        itemClassName: "col-span-1 row-span-1 md:col-span-2  md:row-span-1 "
+        itemClassName: "col-span-1 row-span-1 md:col-span-2  md:row-span-1 p-2"
     },
     {
         id: 2,
         title: "Sports & water",
         description: "Surf, Swimming, Gym, Lifeguard",
         image: "/dune.jpg",
-        itemClassName: "col-span-1 row-span-1 md:col-span-1  md:row-span-2 "
+        itemClassName: "col-span-1 row-span-1 md:col-span-1  md:row-span-2 p-2"
     },
     {
         id: 3,

@@ -8,7 +8,7 @@ import Separator from "./ui/Separator";
 export function Passions() {
     return (
         <><Separator />
-            <div className="h-screen mx-20 my-20 ">
+            <div className="mx-20 my-20 ">
                 <div className="max-w-7xl mx-auto py-20 md:px-8 lg:px-10">
                     <h2 className="text-5xl font-bold text-tiger-300/80 md:text-4xl mb-4 max-w-4xl">
                         My Hobbies
