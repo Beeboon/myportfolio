@@ -16,13 +16,13 @@ export const passionsItems = [
         id: 2,
         title: "Sports & water",
         description: "Surf, Swimming, Gym, Lifeguard",
-        image: "/dune.jpg",
+        image: "/jet.jpg",
         itemClassName: "col-span-1 row-span-1 md:col-span-1  md:row-span-2 p-2"
     },
     {
         id: 3,
         title: "Economie and Finance",
-        description: "Understanding the mechanisms of the world's society",
+        description: "Understanding the society",
         image: "/economie.jpg",
         itemClassName: "col-span-1 row-span-1 md:col-span-2  md:row-span-1 "
     }
@@ -32,7 +32,7 @@ export const projectItems = [
     {
         id: 0,
         title: "PolyHash",
-        description: "A google 2015 HashCode solution develloped trough/with raw python with my teammate \n Deep understanding of the data structure and fondamental algorithms mainly about graph exploration",
+        description: "A google 2015 HashCode solution develloped in raw python with my teammate \n Deep understanding of the data structure and fondamental algorithms mainly about graph exploration",
         techs: ["Python",],
         image: "/hashcode.jpg",
         itemClassName: ""
