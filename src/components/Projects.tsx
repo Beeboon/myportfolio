@@ -9,7 +9,7 @@ import { cards } from '@/data/projects';
 function Projects() {
 
     return (
-        <div className='w-full md:px-10 my-36'>
+        <div className='w-full md:px-10 my-12'>
             <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
                 <h2 className="text-5xl font-bold text-teal-400 md:text-4xl mb-4 max-w-4xl">
                     My Projects

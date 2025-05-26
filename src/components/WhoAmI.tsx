@@ -32,7 +32,7 @@ function WhoAmI() {
                         <h2 className=" text-3xl text-teal-600 font-extrabold group-hover:translate-x-2 transition-all duration-300 ease-in-out">
                             Who Am I
                         </h2>
-                        {formatText(selfIntroduction, "md:text-lg text-teal-300 md:text-left ")}
+                        {formatText(selfIntroduction, "md:text-lg text-teal-300 text-justify ")}
                     </div>
                 </div>
             </div>

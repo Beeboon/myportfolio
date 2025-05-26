@@ -17,7 +17,7 @@ export function Passions() {
                         A short summary of my hobbies and pastimes.
                     </p>
                 </div>
-                <BentoGrid>
+                <BentoGrid className="mx-auto">
                     {passionsItems.map(({ id, title, description, image, itemClassName }) => <BentoGridItem
                         key={id}
                         title={title}
